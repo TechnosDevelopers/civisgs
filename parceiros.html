@@ -76,6 +76,50 @@
                 </div>
             </div>
         </section>
+
+        <section class="section section--alt" aria-labelledby="titulo-perfis">
+            <div class="container">
+                <span class="eyebrow">Perfis</span>
+                <h2 id="titulo-perfis">Como cada parceiro participa</h2>
+                <p class="section__intro">Escolha o seu perfil para ver o que você oferece e o que recebe.</p>
+                <div class="tabs__list" role="tablist" aria-label="Perfis de parceiro">
+                    <button class="tabs__btn" type="button" role="tab" id="aba-comercio" aria-controls="painel-comercio"
+                        aria-selected="true">Comércio</button>
+                    <button class="tabs__btn" type="button" role="tab" id="aba-empresa" aria-controls="painel-empresa"
+                        aria-selected="false" tabindex="-1">Empresa</button>
+                    <button class="tabs__btn" type="button" role="tab" id="aba-ecoponto" aria-controls="painel-ecoponto"
+                        aria-selected="false" tabindex="-1">Ecoponto</button>
+                </div>
+                <div class="card tabs__panel" role="tabpanel" id="painel-comercio" aria-labelledby="aba-comercio">
+                    <h3>Comércio local</h3>
+                    <p>Cinemas, livrarias, restaurantes e lojas que aceitam Eco-Pontos como forma de desconto.</p>
+                    <ul class="checklist">
+                        <li>Cadastra benefícios no catálogo de recompensas.</li>
+                        <li>Valida o cupom do cliente por QR Code no caixa.</li>
+                        <li>Acompanha quantos resgates aconteceram no mês.</li>
+                    </ul>
+                </div>
+                <div class="card tabs__panel" role="tabpanel" id="painel-empresa" aria-labelledby="aba-empresa" hidden>
+                    <h3>Empresa patrocinadora</h3>
+                    <p>Indústrias e marcas que financiam recompensas e usam os dados para suas metas ESG.</p>
+                    <ul class="checklist">
+                        <li>Patrocina Eco-Pontos em bairros ou campanhas específicas.</li>
+                        <li>Recebe relatório mensal de resíduos recuperados.</li>
+                        <li>Comprova logística reversa das próprias embalagens.</li>
+                    </ul>
+                </div>
+                <div class="card tabs__panel" role="tabpanel" id="painel-ecoponto" aria-labelledby="aba-ecoponto"
+                    hidden>
+                    <h3>Ecoponto e cooperativa</h3>
+                    <p>Pontos de coleta que pesam o material e registram a entrega do cidadão.</p>
+                    <ul class="checklist">
+                        <li>Registra a pesagem pelo CPF ou QR Code do cidadão.</li>
+                        <li>Ganha fluxo constante de material já separado.</li>
+                        <li>Aparece no mapa de ecopontos do Civis.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
