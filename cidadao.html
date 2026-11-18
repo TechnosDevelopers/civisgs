@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Civis para o cidadão: recicle, acumule Eco-Pontos e troque por cashback, cinema, livros e refeições.">
+    <title>Cidadão | Civis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Civis - página inicial">
+                <span class="logo__icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                        <path d="M5 19c0-9 5-14 14-14 0 9-5 14-14 14z" fill="#fff" />
+                    </svg></span>
+                Civis
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Abrir menu">
+                <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span
+                    class="nav-toggle__bar"></span>
+            </button>
+            <nav class="nav" id="menu-principal" aria-label="Menu principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html">Início</a></li>
+                    <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+                    <li><a class="nav__link" href="cidadao.html" aria-current="page">Cidadão</a></li>
+                    <li><a class="nav__link" href="parceiros.html">Parceiros</a></li>
+                    <li><a class="nav__link" href="ecopontos.html">Ecopontos</a></li>
+                    <li><a class="nav__link" href="integrantes.html">Integrantes</a></li>
+                    <li><a class="nav__link" href="faq.html">FAQ</a></li>
+                    <li><a class="nav__link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Para o cidadão</span>
+                <h1>Seu lixo separado vale Eco-Pontos</h1>
+                <p>Entregue recicláveis e orgânicos em um ecoponto parceiro, acumule pontos na sua carteira Civis e
+                    troque por benefícios de verdade no seu bairro.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="titulo-como">
+            <div class="container">
+                <span class="eyebrow">Como funciona</span>
+                <h2 id="titulo-como">Do saco de recicláveis ao benefício em 4 passos</h2>
+                <p class="section__intro">Você não precisa mudar a rotina: basta separar o que já descarta e levar ao
+                    ecoponto mais próximo.</p>
+                <div class="grid grid--4">
+                    <article class="card">
+                        <span class="tag">Passo 1</span>
+                        <h3>Separe em casa</h3>
+                        <p>Papel, plástico, vidro, metal, eletrônicos e resíduos orgânicos, cada um no seu saco.</p>
+                    </article>
+                    <article class="card">
+                        <span class="tag">Passo 2</span>
+                        <h3>Leve ao ecoponto</h3>
+                        <p>O material é pesado na hora e registrado no seu cadastro pelo CPF ou QR Code.</p>
+                    </article>
+                    <article class="card">
+                        <span class="tag">Passo 3</span>
+                        <h3>Receba Eco-Pontos</h3>
+                        <p>Os pontos caem na carteira Civis conforme o peso e o tipo de material entregue.</p>
+                    </article>
+                    <article class="card">
+                        <span class="tag">Passo 4</span>
+                        <h3>Troque por benefícios</h3>
+                        <p>Use o saldo em comércios parceiros: cashback, cinema, livrarias e refeições.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" aria-labelledby="titulo-recompensas">
+            <div class="container">
+                <span class="eyebrow">Recompensas</span>
+                <h2 id="titulo-recompensas">Escolha como usar seus Eco-Pontos</h2>
+                <p class="section__intro">Filtre por categoria e veja quantos pontos cada benefício custa. Valores
+                    ilustrativos do protótipo.</p>
+                <div class="filter-bar" role="group" aria-label="Filtrar recompensas por categoria">
+                    <button class="filter-btn" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+                    <button class="filter-btn" type="button" data-filtro="cashback"
+                        aria-pressed="false">Cashback</button>
+                    <button class="filter-btn" type="button" data-filtro="cinema" aria-pressed="false">Cinema</button>
+                    <button class="filter-btn" type="button" data-filtro="livraria"
+                        aria-pressed="false">Livraria</button>
+                    <button class="filter-btn" type="button" data-filtro="refeicao"
+                        aria-pressed="false">Refeição</button>
+                </div>
+                <p id="contador-recompensas" aria-live="polite">8 benefícios encontrados</p>
+                <div class="grid grid--4">
+                    <article class="card reward" data-categoria="cashback">
+                        <div><span class="tag">Cashback</span></div>
+                        <h3>R$ 10 de volta</h3>
+                        <p>Crédito direto na carteira Civis para usar em qualquer comércio parceiro.</p>
+                        <p class="reward__cost">150 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="cashback">
+                        <div><span class="tag">Cashback</span></div>
+                        <h3>R$ 25 de volta</h3>
+                        <p>Para quem recicla toda semana: mais saldo para gastar no bairro.</p>
+                        <p class="reward__cost">350 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="cinema">
+                        <div><span class="tag">Cinema</span></div>
+                        <h3>Ingresso de cinema</h3>
+                        <p>Um ingresso para qualquer sessão 2D nas redes de cinema parceiras.</p>
+                        <p class="reward__cost">500 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="cinema">
+                        <div><span class="tag">Cinema</span></div>
+                        <h3>Combo pipoca + refrigerante</h3>
+                        <p>Combo médio para acompanhar o filme, retirado no balcão do cinema.</p>
+                        <p class="reward__cost">300 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="livraria">
+                        <div><span class="tag">Livraria</span></div>
+                        <h3>15% de desconto em livros</h3>
+                        <p>Cupom válido para qualquer título nas livrarias parceiras.</p>
+                        <p class="reward__cost">150 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="livraria">
+                        <div><span class="tag">Livraria</span></div>
+                        <h3>Vale-livro de R$ 30</h3>
+                        <p>Escolha o livro que quiser e abata o valor direto no caixa.</p>
+                        <p class="reward__cost">420 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="refeicao">
+                        <div><span class="tag">Refeição</span></div>
+                        <h3>Prato do dia</h3>
+                        <p>Almoço em restaurantes parceiros que participam do programa anti-desperdício.</p>
+                        <p class="reward__cost">280 Eco-Pontos</p>
+                    </article>
+                    <article class="card reward" data-categoria="refeicao">
+                        <div><span class="tag">Refeição</span></div>
+                        <h3>Café + salgado</h3>
+                        <p>Lanche em padarias e cafeterias parceiras perto do seu ecoponto.</p>
+                        <p class="reward__cost">160 Eco-Pontos</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="titulo-calculadora">
+            <div class="container">
+                <span class="eyebrow">Simulador</span>
+                <h2 id="titulo-calculadora">Quantos Eco-Pontos você ganharia?</h2>
+                <p class="section__intro">Informe quantos quilos de cada material você separa por mês e veja o saldo
+                    estimado.</p>
+                <div class="calc">
+                    <form class="form" id="calc-form" novalidate>
+                        <div class="form__group">
+                            <label for="kg-papel">Papel e papelão (kg) <small>8 pontos por kg</small></label>
+                            <input type="number" id="kg-papel" name="kg-papel" min="0" step="0.1" inputmode="decimal"
+                                placeholder="0">
+                        </div>
+                        <div class="form__group">
+                            <label for="kg-plastico">Plástico (kg) <small>10 pontos por kg</small></label>
+                            <input type="number" id="kg-plastico" name="kg-plastico" min="0" step="0.1"
+                                inputmode="decimal" placeholder="0">
+                        </div>
+                        <div class="form__group">
+                            <label for="kg-vidro">Vidro (kg) <small>6 pontos por kg</small></label>
+                            <input type="number" id="kg-vidro" name="kg-vidro" min="0" step="0.1" inputmode="decimal"
+                                placeholder="0">
+                        </div>
+                        <div class="form__group">
+                            <label for="kg-metal">Metal (kg) <small>12 pontos por kg</small></label>
+                            <input type="number" id="kg-metal" name="kg-metal" min="0" step="0.1" inputmode="decimal"
+                                placeholder="0">
+                        </div>
+                        <div class="form__group">
+                            <label for="kg-eletronico">Eletrônicos (kg) <small>40 pontos por kg</small></label>
+                            <input type="number" id="kg-eletronico" name="kg-eletronico" min="0" step="0.1"
+                                inputmode="decimal" placeholder="0">
+                        </div>
+                        <div class="form__group">
+                            <label for="kg-organico">Orgânicos (kg) <small>5 pontos por kg</small></label>
+                            <input type="number" id="kg-organico" name="kg-organico" min="0" step="0.1"
+                                inputmode="decimal" placeholder="0">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn--primary" type="submit">Calcular</button>
+                            <button class="btn btn--outline" type="reset">Limpar</button>
+                        </div>
+                    </form>
+                    <div class="calc__result" aria-live="polite">
+                        <p>Seu saldo estimado</p>
+                        <span class="calc__points" id="calc-pontos">0</span>
+                        <p>Eco-Pontos por mês</p>
+                        <p class="calc__eq" id="calc-equivalencia">Informe as quantidades para simular seus pontos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta">
+                    <h2>Comece hoje mesmo</h2>
+                    <p>Encontre o ecoponto mais perto de você e faça sua primeira entrega.</p>
+                    <div class="btn-group">
+                        <a class="btn btn--light" href="ecopontos.html">Encontrar ecopontos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="grid grid--3">
+                <div>
+                    <h2>Civis</h2>
+                    <p>Economia circular urbana e engajamento ESG.</p>
+                </div>
+                <nav aria-label="Rodapé">
+                    <h2>Navegação</h2>
+                    <ul>
+                        <li><a href="sobre.html">Sobre o projeto</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Solução</h2>
+                    <ul>
+                        <li><a href="cidadao.html">Para o cidadão</a></li>
+                        <li><a href="parceiros.html">Para parceiros</a></li>
+                        <li><a href="ecopontos.html">Ecopontos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer__bottom">© 2026 Civis · Global Solution FIAP · Projeto acadêmico</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
