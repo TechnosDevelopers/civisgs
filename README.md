@@ -142,35 +142,6 @@ Equipe **Civis — Global Solution FIAP 2026/2**.
 
 <img src="assets/integrantes/daniel.jpg" width="120">
 
-## 6. Imagens e demonstração
-
-Capturas de tela das principais páginas, em desktop e em celular.
-
-### Página inicial
-
-<img src="assets/projeto/Home1.png">
-<img src="assets/projeto/Home2.png">
-
-### Para o cidadão (simulador e benefícios)
-
-<img src="assets/projeto/Cidadao.png">
-
-### Para parceiros
-
-<img src="assets/projeto/Parceiros.png">
-
-### Ecopontos
-
-<img src="assets/projeto/Ecopontos.png">
-
-### Contato
-
-<img src="assets/projeto/Contato.png">
-
-### Versão mobile
-
-<img src="assets/projeto/Mobile-menu.png" width="280">
-<img src="assets/projeto/Mobile-simulador.png" width="280">
 
 ## 7. Links do projeto
 
