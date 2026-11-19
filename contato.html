@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+
+        content="Fale com a equipe do Civis: tire dúvidas, envie sugestões ou solicite informações sobre ecopontos e parcerias.">
+<title>Contato | Civis</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+<style>
+
+        .form-contato {
+
+            display: grid;
+
+            gap: 1rem;
+
+        }
+
+        .form-contato .campo {
+
+            display: grid;
+
+            gap: 0.35rem;
+
+        }
+
+        .form-contato label {
+
+            font-weight: 600;
+
+        }
+
+        .form-contato input,
+
+        .form-contato select,
+
+        .form-contato textarea {
+
+            width: 100%;
+
+            padding: 0.7rem 0.85rem;
+
+            border: 1px solid #b9c7be;
+
+            border-radius: 8px;
+
+            font: inherit;
+
+            background: #fff;
+
+            color: inherit;
+
+        }
+
+        .form-contato textarea {
+
+            min-height: 150px;
+
+            resize: vertical;
+
+        }
+
+        .form-contato input:focus,
+
+        .form-contato select:focus,
+
+        .form-contato textarea:focus {
+
+            outline: 2px solid currentColor;
+
+            outline-offset: 2px;
+
+        }
+
+        .form-contato .ajuda {
+
+            font-size: 0.875rem;
+
+            opacity: 0.75;
+
+        }
+
+        .form-feedback {
+
+            margin-top: 1rem;
+
+            font-weight: 600;
+
+        }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+<div class="container site-header__inner">
+<a class="logo" href="index.html" aria-label="Civis – página inicial">
+<span class="logo__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20">
+<path d="M5 19c0-9 5-14 14-14 0 9-5 14-14 14z" fill="#fff" />
+</svg></span>
+
+                Civis
+</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+
+                aria-label="Abrir menu">
+<span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span
+
+                    class="nav-toggle__bar"></span>
+</button>
+<nav class="nav" id="menu-principal" aria-label="Menu principal">
+<ul class="nav__list">
+<li><a class="nav__link" href="index.html">Início</a></li>
+<li><a class="nav__link" href="sobre.html">Sobre</a></li>
+<li><a class="nav__link" href="cidadao.html">Cidadão</a></li>
+<li><a class="nav__link" href="parceiros.html">Parceiros</a></li>
+<li><a class="nav__link" href="ecopontos.html">Ecopontos</a></li>
+<li><a class="nav__link" href="integrantes.html">Integrantes</a></li>
+<li><a class="nav__link" href="faq.html">FAQ</a></li>
+<li><a class="nav__link" href="contato.html" aria-current="page">Contato</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section class="page-hero">
+<div class="container">
+<span class="eyebrow">Contato</span>
+<h1>Fale com a equipe do Civis</h1>
+<p>Tem dúvidas, sugestões ou quer levar o Civis para o seu negócio? Envie uma mensagem e nossa equipe
+
+                    responde o quanto antes.</p>
+</div>
+</section>
+<section class="section" aria-labelledby="titulo-form">
+<div class="container">
+<span class="eyebrow">Envie sua mensagem</span>
+<h2 id="titulo-form">Formulário de contato</h2>
+<p class="section__intro">Preencha os campos abaixo. Todos são obrigatórios.</p>
+<div class="card">
+<form class="form-contato" id="form-contato" action="#" method="post" novalidate>
+<div class="campo">
+<label for="nome">Nome completo</label>
+<input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome"
+
+                                required>
+</div>
+<div class="campo">
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" autocomplete="email"
+
+                                placeholder="seuemail@exemplo.com" required>
+</div>
+<div class="campo">
+<label for="perfil">Você é</label>
+<select id="perfil" name="perfil" required>
+<option value="">Selecione...</option>
+<option value="cidadao">Cidadão</option>
+<option value="parceiro">Comércio / empresa parceira</option>
+<option value="ecoponto">Operador de ecoponto</option>
+<option value="outro">Outro</option>
+</select>
+</div>
+<div class="campo">
+<label for="assunto">Assunto</label>
+<select id="assunto" name="assunto" required>
+<option value="">Selecione...</option>
+<option value="duvida">Dúvida</option>
+<option value="sugestao">Sugestão</option>
+<option value="parceria">Quero ser parceiro</option>
+<option value="ecopontos">Informações sobre ecopontos</option>
+<option value="outro">Outro</option>
+</select>
+</div>
+<div class="campo">
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" minlength="10" placeholder="Escreva sua mensagem..."
+
+                                required></textarea>
+<span class="ajuda">Mínimo de 10 caracteres.</span>
+</div>
+<div class="btn-group">
+<button class="btn btn--primary" type="submit">Enviar mensagem</button>
+</div>
+<p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</section>
+<section class="section section--alt" aria-labelledby="titulo-canais">
+<div class="container">
+<span class="eyebrow">Outros canais</span>
+<h2 id="titulo-canais">Prefere falar de outro jeito?</h2>
+<div class="grid grid--3">
+<article class="card">
+<h3>E-mail</h3>
+<p>contato@civis.example</p>
+</article>
+<article class="card">
+<h3>Parcerias</h3>
+<p>Quer cadastrar seu negócio? Veja como funciona na página de
+<a href="parceiros.html">parceiros</a>.</p>
+</article>
+<article class="card">
+<h3>Dúvidas rápidas</h3>
+<p>Confira as respostas mais comuns no <a href="faq.html">FAQ</a>.</p>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="grid grid--3">
+<div>
+<h2>Civis</h2>
+<p>Economia circular urbana e engajamento cidadão em um só lugar.</p>
+</div>
+<nav aria-label="Rodapé">
+<h2>Navegação</h2>
+<ul>
+<li><a href="sobre.html">Sobre o projeto</a></li>
+<li><a href="integrantes.html">Integrantes</a></li>
+<li><a href="faq.html">Perguntas frequentes</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+<div>
+<h2>Solução</h2>
+<ul>
+<li><a href="cidadao.html">Para o cidadão</a></li>
+<li><a href="parceiros.html">Para parceiros</a></li>
+<li><a href="ecopontos.html">Ecopontos</a></li>
+</ul>
+</div>
+</div>
+<p>&copy; 2026 Civis – Global Solution FIAP</p>
+</div>
+</footer>
+<script>
+
+        (function () {
+
+            var form = document.getElementById('form-contato');
+
+            var feedback = document.getElementById('form-feedback');
+
+            if (!form) return;
+
+            form.addEventListener('submit', function (e) {
+
+                e.preventDefault();
+
+                if (!form.checkValidity()) {
+
+                    feedback.textContent = 'Confira os campos: todos são obrigatórios e o e-mail precisa ser válido.';
+
+                    var invalido = form.querySelector(':invalid');
+
+                    if (invalido) invalido.focus();
+
+                    return;
+
+                }
+
+                feedback.textContent = 'Mensagem enviada! Obrigado pelo contato, retornaremos em breve.';
+
+                form.reset();
+
+            });
+
+        })();
+</script>
+</body>
+</html>
+ 
