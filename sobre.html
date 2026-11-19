@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Conheça o projeto Civis: problema abordado, objetivo da solução e proposta desenvolvida pela equipe.">
+  <title>Sobre o projeto | Civis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Civis - página inicial">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M5 19c0-9 5-14 14-14 0 9-5 14-14 14z" fill="#fff" />
+          </svg>
+        </span>
+        Civis
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+        aria-label="Abrir menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="sobre.html" aria-current="page">Sobre</a></li>
+          <li><a class="nav__link" href="cidadao.html">Cidadão</a></li>
+          <li><a class="nav__link" href="parceiros.html">Parceiros</a></li>
+          <li><a class="nav__link" href="ecopontos.html">Ecopontos</a></li>
+          <li><a class="nav__link" href="integrantes.html">Integrantes</a></li>
+          <li><a class="nav__link" href="faq.html">FAQ</a></li>
+          <li><a class="nav__link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Sobre o projeto</span>
+        <h1>O ecossistema Civis</h1>
+        <p>Uma plataforma multicanal de economia circular urbana e engajamento ESG.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2">
+          <article class="card">
+            <h2>Descrição do projeto</h2>
+            <p>A Civis é uma plataforma que fecha o ciclo da economia circular conectando três pontas que hoje andam
+              desconectadas: o cidadão, o comércio local e as cooperativas de reciclagem.</p>
+            <p>O cidadão recicla resíduos secos e especiais, entrega orgânicos e alimentos, acumula Eco-Pontos e os
+              troca por benefícios reais nas empresas parceiras.</p>
+          </article>
+
+          <article class="card">
+            <h2>Problema abordado</h2>
+            <ul class="checklist">
+              <li>O cidadão sabe (ou pode saber) onde reciclar, mas falta incentivo real para mudar o hábito.</li>
+              <li>As empresas querem métricas ESG reais, mas faltam ferramentas práticas de auditoria e conexão com o
+                consumidor consciente.</li>
+              <li>Restaurantes e comércios sofrem com o desperdício de alimentos e geram resíduos orgânicos caros de
+                descartar.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="titulo-objetivo">
+      <div class="container">
+        <h2 id="titulo-objetivo">Objetivo da solução</h2>
+        <p class="section__intro">Transformar o descarte correto em um hábito recompensador, gerando valor para quem
+          recicla, para quem apoia e para quem opera a cadeia.</p>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Para o cidadão</h3>
+            <p>Converter reciclagem em cashback, ingressos de cinema (como na Cinépolis), descontos em livrarias e
+              resgate de refeições.</p>
+          </article>
+
+          <article class="card">
+            <h3>Para o comércio</h3>
+            <p>Atrair clientes qualificados e recorrentes, reduzir custos de desperdício e receber relatórios ESG
+              auditáveis.</p>
+          </article>
+
+          <article class="card">
+            <h3>Para as cooperativas</h3>
+            <p>Receber material já triado e otimizar rotas e recebimentos com a inteligência da plataforma.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" aria-labelledby="titulo-proposta">
+      <div class="container">
+        <h2 id="titulo-proposta">Proposta desenvolvida pela equipe</h2>
+        <p class="section__intro">Neste protótipo front-end, a equipe apresenta a experiência das três pontas do
+          ecossistema.</p>
+
+        <div class="grid grid--3">
+          <article class="card card--green">
+            <h3>Cidadão</h3>
+            <p>Simulador de Eco-Pontos e catálogo filtrável de benefícios.</p>
+            <a class="btn btn--light" href="cidadao.html">Ver página<span class="sr-only"> do cidadão</span></a>
+          </article>
+
+          <article class="card card--green">
+            <h3>Parceiros</h3>
+            <p>Painel de métricas ESG e canais de parceria para cinemas, livrarias e restaurantes.</p>
+            <a class="btn btn--light" href="parceiros.html">Ver página<span class="sr-only"> de parceiros</span></a>
+          </article>
+
+          <article class="card card--green">
+            <h3>Ecopontos</h3>
+            <p>Rede de pontos de entrega e cooperativas com busca por bairro ou material.</p>
+            <a class="btn btn--light" href="ecopontos.html">Ver página<span class="sr-only"> de ecopontos</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid--3">
+        <div>
+          <h2>Civis</h2>
+          <p>Economia circular urbana e engajamento ESG.</p>
+        </div>
+
+        <nav aria-labelledby="rodape-navegacao">
+          <h2 id="rodape-navegacao">Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre o projeto</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="rodape-solucao">
+          <h2 id="rodape-solucao">Solução</h2>
+          <ul>
+            <li><a href="cidadao.html">Para o cidadão</a></li>
+            <li><a href="parceiros.html">Para parceiros</a></li>
+            <li><a href="ecopontos.html">Ecopontos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="site-footer__bottom">© 2026 Civis · Global Solution FIAP · Projeto acadêmico</p>
+    </div>
+  </footer>
+</body>
+
+</html>
