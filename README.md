@@ -86,7 +86,7 @@ civis/
 └── assets/
     ├── avatar.svg
     ├── integrantes/
-    └── projeto/
+    
 ```
 
 - `css/style.css`: folha de estilos única, com variáveis de cor, componentes reutilizáveis e media queries.
