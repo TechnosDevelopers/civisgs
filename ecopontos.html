@@ -46,6 +46,60 @@
 
 
         <section class="page-hero">
+
+
+            <section class="section" aria-labelledby="titulo-busca">
+                <div class="container">
+                    <h2 id="titulo-busca">Encontre um ponto de entrega</h2>
+                    <p class="section__intro">Busque por bairro ou material. Os endereços são fictícios neste protótipo.
+                    </p>
+
+                    <div class="form">
+                        <div class="form__group">
+                            <label for="busca-ecoponto">Buscar por bairro ou material</label>
+                            <input type="search" id="busca-ecoponto" placeholder="Ex.: Pinheiros, vidro, eletrônicos">
+                        </div>
+                    </div>
+
+                    <div class="eco-list" aria-live="polite">
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>1</span></div>
+                            <div>
+                                <h3>Ecoponto Pinheiros</h3>
+                                <p>Rua das Palmeiras, 120 · Pinheiros<br>Aceita: papel, plástico, vidro, metal</p>
+                            </div>
+                        </article>
+
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>2</span></div>
+                            <div>
+                                <h3>Ecoponto Vila Mariana</h3>
+                                <p>Av. do Parque, 450 · Vila Mariana<br>Aceita: eletrônicos, pilhas, baterias</p>
+                            </div>
+                        </article>
+
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>3</span></div>
+                            <div>
+                                <h3>Cooperativa Recicla Centro</h3>
+                                <p>Rua do Comércio, 88 · Centro<br>Aceita: papel, plástico, metal (triagem)</p>
+                            </div>
+                        </article>
+
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>4</span></div>
+                            <div>
+                                <h3>Ponto Orgânicos Mooca</h3>
+                                <p>Rua dos Ipês, 300 · Mooca<br>Aceita: orgânicos e alimentos para compostagem</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <p id="eco-vazio" hidden>Nenhum ecoponto encontrado para essa busca.</p>
+                </div>
+            </section>
+
+
             <div class="container">
                 <span class="eyebrow">B2B operacional · Cooperativas</span>
                 <h1>Ecopontos e cooperativas</h1>
