@@ -174,8 +174,8 @@ Capturas de tela das principais páginas, em desktop e em celular.
 
 ## 7. Links do projeto
 
-- **Repositório no GitHub:** **[COLAR AQUI O LINK DO REPOSITÓRIO PÚBLICO]**
-- **Site publicado (GitHub Pages), se houver:** **[COLAR AQUI O LINK, OU APAGAR ESTA LINHA]**
+- **Repositório no GitHub:** **[(https://github.com/TechnosDevelopers/civisgs)]**
+
 
 ## 8. Contato
 
@@ -185,9 +185,6 @@ Para dúvidas, sugestões ou informações sobre o projeto, entre em contato com
 **Instituição:** FIAP  
 **Desafio:** Global Solution 2026/2 — CitizenTech
 
-## 9. Uso de IA generativa
-
-A equipe utilizou a ferramenta Claude (Anthropic) como apoio na revisão do código e na elaboração da documentação. A equipe revisou e compreende todo o material entregue. **[Ajustar conforme o uso real.]**
 
 ---
 
