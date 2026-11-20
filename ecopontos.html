@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Encontre ecopontos e cooperativas parceiras da Civis por bairro ou tipo de material.">
+    <title>Ecopontos e cooperativas | Civis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Civis - página inicial">
+                <span class="logo__icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                        <path d="M5 19c0-9 5-14 14-14 0 9-5 14-14 14z" fill="#fff" />
+                    </svg></span>
+                Civis
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Abrir menu">
+                <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span
+                    class="nav-toggle__bar"></span>
+            </button>
+            <nav class="nav" id="menu-principal" aria-label="Menu principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="index.html">Início</a></li>
+                    <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+                    <li><a class="nav__link" href="cidadao.html">Cidadão</a></li>
+                    <li><a class="nav__link" href="parceiros.html">Parceiros</a></li>
+                    <li><a class="nav__link" href="ecopontos.html" aria-current="page">Ecopontos</a></li>
+                    <li><a class="nav__link" href="integrantes.html">Integrantes</a></li>
+                    <li><a class="nav__link" href="faq.html">FAQ</a></li>
+                    <li><a class="nav__link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+
+        <section class="page-hero">
+
+
+            <section class="section" aria-labelledby="titulo-busca">
+                <div class="container">
+                    <h2 id="titulo-busca">Encontre um ponto de entrega</h2>
+                    <p class="section__intro">Busque por bairro ou material. Os endereços são fictícios neste protótipo.
+                    </p>
+
+                    <div class="form">
+                        <div class="form__group">
+                            <label for="busca-ecoponto">Buscar por bairro ou material</label>
+                            <input type="search" id="busca-ecoponto" placeholder="Ex.: Pinheiros, vidro, eletrônicos">
+                        </div>
+                    </div>
+
+                    <div class="eco-list" aria-live="polite">
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>1</span></div>
+                            <div>
+                                <h3>Ecoponto Pinheiros</h3>
+                                <p>Rua das Palmeiras, 120 · Pinheiros<br>Aceita: papel, plástico, vidro, metal</p>
+                            </div>
+                        </article>
+
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>2</span></div>
+                            <div>
+                                <h3>Ecoponto Vila Mariana</h3>
+                                <p>Av. do Parque, 450 · Vila Mariana<br>Aceita: eletrônicos, pilhas, baterias</p>
+                            </div>
+                        </article>
+
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>3</span></div>
+                            <div>
+                                <h3>Cooperativa Recicla Centro</h3>
+                                <p>Rua do Comércio, 88 · Centro<br>Aceita: papel, plástico, metal (triagem)</p>
+                            </div>
+                        </article>
+
+                        <article class="card eco">
+                            <div class="eco__pin" aria-hidden="true"><span>4</span></div>
+                            <div>
+                                <h3>Ponto Orgânicos Mooca</h3>
+                                <p>Rua dos Ipês, 300 · Mooca<br>Aceita: orgânicos e alimentos para compostagem</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <p id="eco-vazio" hidden>Nenhum ecoponto encontrado para essa busca.</p>
+                </div>
+            </section>
+
+
+            <div class="container">
+                <span class="eyebrow">B2B operacional · Cooperativas</span>
+                <h1>Ecopontos e cooperativas</h1>
+                <p>Onde entregar e como o material triado chega às cooperativas.</p>
+            </div>
+        </section>
+
+
+        <section class="section section--alt" aria-labelledby="titulo-coop">
+            <div class="container">
+                <h2 id="titulo-coop">Inteligência para as cooperativas</h2>
+
+                <div class="grid grid--3">
+                    <article class="card">
+                        <h3>Material triado</h3>
+                        <p>O cidadão já entrega separado, o que aumenta o aproveitamento.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Rotas otimizadas</h3>
+                        <p>A plataforma sugere rotas de coleta com base no volume de cada ponto.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Previsão de recebimento</h3>
+                        <p>Dados de entrega ajudam a planejar a operação e reduzir custos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="grid grid--3">
+                <div>
+                    <h2>Civis</h2>
+                    <p>Economia circular urbana e engajamento ESG.</p>
+                </div>
+                <nav aria-label="Rodapé">
+                    <h2>Navegação</h2>
+                    <ul>
+                        <li><a href="sobre.html">Sobre o projeto</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Solução</h2>
+                    <ul>
+                        <li><a href="cidadao.html">Para o cidadão</a></li>
+                        <li><a href="parceiros.html">Para parceiros</a></li>
+                        <li><a href="ecopontos.html">Ecopontos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer__bottom">© 2026 Civis · Global Solution FIAP · Projeto acadêmico</p>
+        </div>
+    </footer>
+</body>
+
+</html>
